@@ -49,8 +49,6 @@ Android/build.gradle
 
 # Gradle files
 .gradle/
-build/
-/*/build/
 Android/gradle/
 Android/gradlew
 Android/gradlew.bat
@@ -64,3 +62,17 @@ Android/tutoriallibrary/src/main/AndroidManifest.xml
 Android/nobuildlib/src/main/AndroidManifest.xml
 Android/nobuildlib/src/main/res/values/strings.xml
 Android/nobuildlib/build.gradle
+
+# Build
+build/
+
+# Include these specific files
+!Android/tutoriallibrary/*
+
+# Ignore these...
+Android/tutoriallibrary/build/generated/
+Android/tutoriallibrary/build/tmp/
+Android/tutoriallibrary/build/intermediates/
+Android/tutoriallibrary/*.pro
+Android/tutoriallibrary/*.iml
+Android/tutoriallibrary/*.gradle
